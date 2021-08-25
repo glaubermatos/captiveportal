@@ -1,0 +1,91 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(108.88deg, #97E6A2 -11.98%, #307539 90.88%);
+}
+
+main {
+    display: flex;
+
+}
+
+#image-container {
+    flex: 8;
+}
+
+#content {
+    flex: 4;
+    max-width: 40.74rem;
+    height: 100vh;
+    background: #fff;
+}
+
+#content .container {
+    margin: 8rem 6rem;
+}
+
+#content .container header {
+    border-bottom: 1px solid #D6E5D3;
+    padding-bottom: 0.5rem;
+}
+
+#content .container header strong {
+    font-size: 1.75rem;
+    font-weight: bold;
+    line-height: 35px;
+    color: #4E9C58;
+}
+
+#content .container .login-container form .input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+#content .container .login-container form h2 {
+    font-size: 2rem;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    color: #1A421F;
+}
+
+#content .container .login-container form .input-group:not(:first-child) label {
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #1A421F;
+}
+
+#content .container .login-container form .input-group input[type="text"],
+#content .container .login-container form .input-group input[type="password"],
+#content .container .login-container form button {
+    height: 4rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+}
+
+#content .container .login-container form .input-group input[type="text"],
+#content .container .login-container form .input-group input[type="password"] {
+    background: #F5FAF5;
+    border: 1px solid #D6E5D3;
+    margin-top: 0.5rem;
+    padding: 0 1rem;
+    color: #1A421F;
+}
+
+#content .container .login-container form button {
+    width: 100%;
+    background: #5CB768;
+    margin-top: 2.5rem;
+    color: #fff;
+    border: none;
+    font-weight: bold;
+}
+
+#content .container .login-container form button:disabled {
+    filter: opacity(0.5);
+    cursor: not-allowed;
+}
+
