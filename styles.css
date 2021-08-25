@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html, body, input, button {
+    font: 400 16px 'Nunito', sans-serif;
+}
+
 body {
     background: linear-gradient(108.88deg, #97E6A2 -11.98%, #307539 90.88%);
     /* background: linear-gradient(118.64deg, #307539 11.08%, #97E6A2 100%); */
@@ -12,7 +16,6 @@ body {
 
 main {
     display: flex;
-
 }
 
 #image-container {
@@ -53,6 +56,7 @@ main {
     color: #000;
     font-weight: bold;
     font-size: 1.5rem;
+    letter-spacing: 0.09rem;
 }
 
 #content .container header strong {
@@ -60,6 +64,7 @@ main {
     font-weight: bold;
     line-height: 35px;
     color: #4E9C58;
+    letter-spacing: 0.09rem;
 }
 
 #content .container .login-container form .input-group {
@@ -82,23 +87,43 @@ main {
 
 #content .container .login-container form .input-group input[type="text"],
 #content .container .login-container form .input-group input[type="password"],
-#content .container .login-container form button {
+#content .container .login-container form button, 
+#content .container .login-container form .input-group .input {
+    width: 100%;
     height: 4rem;
     border-radius: 0.5rem;
     font-size: 1rem;
 }
 
-#content .container .login-container form .input-group input[type="text"],
-#content .container .login-container form .input-group input[type="password"] {
+#content .container .login-container form .input-group .input {
     background: #F5FAF5;
     border: 1px solid #D6E5D3;
     margin-top: 0.5rem;
     padding: 0 1rem;
     color: #1A421F;
+    
+    display: flex;
+}
+
+#content .container .login-container form .input-group .input:focus-within {
+    border: 1px solid #5CB768;
+}
+
+#content .container .login-container form .input-group .input input[type="text"],
+#content .container .login-container form .input-group .input input[type="password"] {
+    background: transparent;
+    border: none;
+    outline: none;
+    margin-left: 1rem;
+    color: #52665A;
+    font-size: 1.25rem;
+}
+
+#content .container .login-container form .input-group .input input[type="password"] {
+    margin-right: 1rem;
 }
 
 #content .container .login-container form button {
-    width: 100%;
     background: #5CB768;
     margin-top: 2.5rem;
     color: #fff;

@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="styles.css">
 
     <title>Document</title>
@@ -29,11 +33,18 @@
 
                         <div class="input-group">
                             <label for="username">Usuário</label>
-                            <input type="text" name="username" />
+                            <div class="input">
+                                <img src="assets/images/icon-user.svg" alt="">
+                                <input type="text" name="username" autocomplete="off" />
+                            </div>
                         </div>
                         <div class="input-group">
                             <label for="password">Senha</label>
-                            <input type="password" name="password" />
+                            <div class="input">
+                                <img src="assets/images/icon-password.svg" alt="">
+                                <input type="password" name="password" />
+                                <img src="assets/images/icon-show-password.svg" alt="">
+                            </div>
                         </div>
                         <button type="submit" disabled>ACESSAR</button>
                     </form>
