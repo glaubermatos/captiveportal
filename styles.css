@@ -17,26 +17,23 @@ body {
 main {
     display: flex;
 }
-
+    
 #image-container {
-    flex: 8;
-    display: flex;
-    justify-content: center;
+    display: none;
 }
 
 #image-container img {
-    max-width: 40.9rem;
+    max-width: 25rem;
 }
 
 #content {
     flex: 4;
-    max-width: 40.74rem;
     height: 100vh;
     background: #fff;
 }
 
 #content .container {
-    margin: 8rem 6rem;
+    margin: 6.5rem 1.5rem;
 }
 
 #content .container header {
@@ -67,17 +64,18 @@ main {
     letter-spacing: 0.09rem;
 }
 
+#content .container .login-container form h2 {
+    font-size: 1.5rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2rem;
+    color: #1A421F;
+}
+
 #content .container .login-container form .input-group {
     display: flex;
     flex-direction: column;
 }
 
-#content .container .login-container form h2 {
-    font-size: 2rem;
-    margin-top: 4rem;
-    margin-bottom: 2rem;
-    color: #1A421F;
-}
 
 #content .container .login-container form .input-group:not(:first-child) label {
     margin-top: 1rem;
@@ -90,7 +88,7 @@ main {
 #content .container .login-container form button, 
 #content .container .login-container form .input-group .input {
     width: 100%;
-    height: 4rem;
+    height: 3rem;
     border-radius: 0.5rem;
     font-size: 1rem;
 }
@@ -116,7 +114,7 @@ main {
     outline: none;
     margin-left: 1rem;
     color: #52665A;
-    font-size: 1.25rem;
+    font-size: 1.125rem;
 }
 
 #content .container .login-container form .input-group .input input[type="password"] {
@@ -136,3 +134,78 @@ main {
     cursor: not-allowed;
 }
 
+/*======= MEDIA QUERIES =====================================*/
+
+
+@media (min-width: 720px) {
+    #image-container {
+        flex: 8;
+        display: flex;
+        justify-content: center;
+    }
+
+    #content .container .login-container form h2 {
+        font-size: 2rem;
+        margin-top: 2.5rem;
+        margin-bottom: 2rem;
+        color: #1A421F;
+    }
+}
+
+@media (min-width: 1200px) {
+    #content .container {
+        margin: 5rem 6rem;
+    }
+    
+    #image-container img {
+        max-width: 31.25rem;
+    }
+
+    #content .container .login-container form .input-group input[type="text"],
+    #content .container .login-container form .input-group input[type="password"],
+    #content .container .login-container form button, 
+    #content .container .login-container form .input-group .input {
+        width: 100%;
+        height: 3.5rem;
+        border-radius: 0.5rem;
+        font-size: 1rem;
+    }
+}
+
+/* extra large devices: > 1200 */
+@media (min-width: 1400px) {
+    #image-container img {
+        max-width: 40.9rem;
+    }
+
+    #content .container {
+        margin: 8rem 6.5rem;
+    }
+
+    #content .container .login-container form h2 {
+        font-size: 2rem;
+        margin-top: 4rem;
+        margin-bottom: 2rem;
+        color: #1A421F;
+    }
+
+    #content .container .login-container form .input-group input[type="text"],
+    #content .container .login-container form .input-group input[type="password"],
+    #content .container .login-container form button, 
+    #content .container .login-container form .input-group .input {
+        width: 100%;
+        height: 4rem;
+        border-radius: 0.5rem;
+        font-size: 1rem;
+    }
+    
+    #content .container .login-container form .input-group .input input[type="text"],
+    #content .container .login-container form .input-group .input input[type="password"] {
+        background: transparent;
+        border: none;
+        outline: none;
+        margin-left: 1rem;
+        color: #52665A;
+        font-size: 1.25rem;
+    }
+}
