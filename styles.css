@@ -6,6 +6,8 @@
 
 body {
     background: linear-gradient(108.88deg, #97E6A2 -11.98%, #307539 90.88%);
+    /* background: linear-gradient(118.64deg, #307539 11.08%, #97E6A2 100%); */
+    /* background: linear-gradient(121.83deg, #97E6A2 -9.19%, #307539 85.41%); */
 }
 
 main {
@@ -15,6 +17,12 @@ main {
 
 #image-container {
     flex: 8;
+    display: flex;
+    justify-content: center;
+}
+
+#image-container img {
+    max-width: 40.9rem;
 }
 
 #content {
@@ -31,6 +39,20 @@ main {
 #content .container header {
     border-bottom: 1px solid #D6E5D3;
     padding-bottom: 0.5rem;
+}
+
+#content .container header .wifi-zone {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+#content .container header .wifi-zone strong {
+    color: #000;
+    font-weight: bold;
+    font-size: 1.5rem;
 }
 
 #content .container header strong {
