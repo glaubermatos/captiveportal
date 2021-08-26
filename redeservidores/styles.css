@@ -8,12 +8,6 @@ html, body, input, button {
     font: 400 16px 'Nunito', sans-serif;
 }
 
-body {
-    background: linear-gradient(108.88deg, #97E6A2 -11.98%, #307539 90.88%);
-    /* background: linear-gradient(118.64deg, #307539 11.08%, #97E6A2 100%); */
-    /* background: linear-gradient(121.83deg, #97E6A2 -9.19%, #307539 85.41%); */
-}
-
 main {
     display: flex;
 }
@@ -30,6 +24,8 @@ main {
     flex: 4;
     height: 100vh;
     background: #fff;
+
+    overflow-x: auto;
 
     display: flex;
     flex-direction: column;
@@ -186,6 +182,12 @@ main {
 
 /*======= MEDIA QUERIES =====================================*/
 @media (min-width: 720px) {
+
+    body {
+        background: linear-gradient(108.88deg, #97E6A2 -11.98%, #307539 90.88%);
+        /* background: linear-gradient(118.64deg, #307539 11.08%, #97E6A2 100%); */
+        /* background: linear-gradient(121.83deg, #97E6A2 -9.19%, #307539 85.41%); */
+    }
     #image-container {
         flex: 8;
         display: flex;
