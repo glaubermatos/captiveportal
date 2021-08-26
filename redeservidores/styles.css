@@ -30,10 +30,17 @@ main {
     flex: 4;
     height: 100vh;
     background: #fff;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 #content .container {
     margin: 6.5rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
 }
 
 #content .container header {
@@ -134,9 +141,32 @@ main {
     cursor: not-allowed;
 }
 
+#content footer {
+    color: #52665A;
+    border-top: 1px solid #D6E5D3;
+    padding: 1rem 1.5rem 1.5rem 1.5rem;
+}
+
+#content footer.container {
+    margin: 0;
+}
+
+#content footer span {
+    font-size: 1.125rem;
+    opacity: 0.6;
+}
+
+#content footer p {
+    font-size: 1rem;
+    line-height: 1.40625rem;
+    margin-top: 0.5rem;
+    font-weight: bold;
+    opacity: 0.8;
+}
+
+
+
 /*======= MEDIA QUERIES =====================================*/
-
-
 @media (min-width: 720px) {
     #image-container {
         flex: 8;
