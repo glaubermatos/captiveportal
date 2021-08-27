@@ -271,7 +271,7 @@ main {
     }
 
     #content .container {
-        margin: 8rem 4rem;
+        margin: 8rem 4rem 0;
     }
 
     #content .container .login-container form h2 {
@@ -306,6 +306,6 @@ main {
 @media (min-width: 1600px) {
 
     #content .container {
-        margin: 8rem 6rem;
+        margin: 8rem 6rem 0;
     }
 }
