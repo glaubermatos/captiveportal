@@ -82,11 +82,14 @@ main {
     flex-direction: column;
 }
 
+#content .container .login-container form .input-group label {
+    align-self: flex-start;
+    font-size: 1rem;
+    color: #1A421F;
+}
 
 #content .container .login-container form .input-group:not(:first-child) label {
     margin-top: 1rem;
-    font-size: 1rem;
-    color: #1A421F;
 }
 
 #content .container .login-container form .input-group input[type="text"],
@@ -115,6 +118,7 @@ main {
 
 #content .container .login-container form .input-group .input:focus-within {
     border: 1px solid #5CB768;
+    background: #E1FAE1;
 }
 
 #content .container .login-container form .input-group .input input[type="text"],
@@ -126,6 +130,11 @@ main {
     margin-left: 1rem;
     color: #52665A;
     font-size: 1.125rem;
+}
+
+#content .container .login-container form .input-group .input input[type="text"]:focus,
+#content .container .login-container form .input-group .input input[type="password"]:focus {
+    color: #1A421F;
 }
 
 #content .container .login-container form .input-group .input input[type="password"] {
