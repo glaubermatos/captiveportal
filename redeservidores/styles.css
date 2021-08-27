@@ -72,8 +72,8 @@ main {
 
 #content .container .login-container form h2 {
     font-size: 1.5rem;
-    margin-top: 2.5rem;
-    margin-bottom: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
     color: #1A421F;
 }
 
@@ -88,7 +88,7 @@ main {
     color: #1A421F;
 }
 
-#content .container .login-container form .input-group:not(:first-child) label {
+#content .container .login-container form .input-group:not(:first-child) {
     margin-top: 1rem;
 }
 
@@ -190,6 +190,23 @@ main {
     opacity: 0.8;
 }
 
+#content .container .login-container form .error-msg {
+    height: 3.5rem;
+    background: #FFE5E5;
+    border-radius: 0.5rem;
+    border: 1px solid #DB5357;
+    padding: 1rem;
+    margin-top: 1.5rem;    
+    display: flex;
+    align-items: center;
+}
+
+#content .container .login-container form .error-msg p {
+    color: #7A4A4B;
+    line-height: 1.25rem;
+    margin-left: 1rem;
+}
+
 
 
 /*======= MEDIA QUERIES =====================================*/
@@ -213,15 +230,15 @@ main {
 
     #content .container .login-container form h2 {
         font-size: 2rem;
-        margin-top: 2.5rem;
-        margin-bottom: 2rem;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
         color: #1A421F;
     }
 }
 
 @media (min-width: 1200px) {
     #content .container {
-        margin: 4rem 6rem 0;
+        margin: 4rem 3rem 0;
     }
 
     #image-container {
@@ -241,6 +258,10 @@ main {
         border-radius: 0.5rem;
         font-size: 1rem;
     }
+
+    #content .container .login-container form .error-msg {
+        height: 4rem;
+    }
 }
 
 /* extra large devices: > 1200 */
@@ -250,13 +271,13 @@ main {
     }
 
     #content .container {
-        margin: 8rem 6.5rem;
+        margin: 8rem 4rem;
     }
 
     #content .container .login-container form h2 {
         font-size: 2rem;
         margin-top: 4rem;
-        margin-bottom: 2rem;
+        /* margin-bottom: 2rem; */
         color: #1A421F;
     }
 
@@ -278,5 +299,13 @@ main {
         margin-left: 1rem;
         color: #52665A;
         font-size: 1.25rem;
+    }
+}
+
+/* extra large devices: > 1600 */
+@media (min-width: 1600px) {
+
+    #content .container {
+        margin: 8rem 6rem;
     }
 }
