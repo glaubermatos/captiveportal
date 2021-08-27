@@ -33,7 +33,10 @@ main {
 }
 
 #content .container {
-    margin: 6.5rem 1.5rem;
+    /* margin: 6.5rem 1.5rem; */
+    margin: 3rem 1.5rem 0;
+
+
     display: flex;
     flex-direction: column;
     justify-content: left;
@@ -188,10 +191,15 @@ main {
         /* background: linear-gradient(118.64deg, #307539 11.08%, #97E6A2 100%); */
         /* background: linear-gradient(121.83deg, #97E6A2 -9.19%, #307539 85.41%); */
     }
+
     #image-container {
-        flex: 8;
+        flex: 5;
         display: flex;
         justify-content: center;
+    }
+
+    #image-container img {
+        max-width: 22rem;
     }
 
     #content .container .login-container form h2 {
@@ -204,9 +212,13 @@ main {
 
 @media (min-width: 1200px) {
     #content .container {
-        margin: 5rem 6rem;
+        margin: 4rem 6rem 0;
     }
-    
+
+    #image-container {
+        flex: 8;
+    }
+
     #image-container img {
         max-width: 31.25rem;
     }
