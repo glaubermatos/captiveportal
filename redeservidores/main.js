@@ -20,7 +20,11 @@ username.addEventListener('keyup', () => {
 password.addEventListener('keyup', () => {
 
     if(password.value.length >= 3) {
-        fildPassHasValid = true
+        if (password.value === '123@Mudar') {
+            fildPassHasValid = false
+        } else {
+            fildPassHasValid = true
+        }
     } else {
         fildPassHasValid = false
     }
