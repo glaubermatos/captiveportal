@@ -1,0 +1,24 @@
+.container {
+    background-color: #fff;
+    width: 100%;
+    /* position: fixed;
+    bottom: 0; */
+    color: #000;
+    border-top: 1px solid #D6E5D3;
+    padding: 1rem 2rem 1rem 2rem;
+    
+    margin: 0;
+
+    span {
+        font-size: 0.875rem;
+        opacity: 0.7;
+    }
+    
+    p {
+        font-size: 1rem;
+        line-height: 1.40625rem;
+        margin-top: 0.5rem;
+        font-weight: bold;
+        opacity: 0.7;
+    }
+}

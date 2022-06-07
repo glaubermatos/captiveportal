@@ -1,0 +1,27 @@
+.headerContainer {
+    border-bottom: 1px solid #D6E5D3;
+    padding-bottom: 0.5rem;
+
+    strong {        
+        font-size: 1.75rem;
+        font-weight: bold;
+        line-height: 35px;
+        color: #4E9C58;
+        letter-spacing: 0.09rem;
+    }
+
+    .wifiZone {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 1rem;
+
+        strong {
+            color: #000;
+            font-weight: bold;
+            font-size: 1.5rem;
+            letter-spacing: 0.09rem;
+        }
+    }
+}
