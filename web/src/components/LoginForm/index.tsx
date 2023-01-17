@@ -9,8 +9,8 @@ interface LoginFormProps {
 
 export const loginFormSteps = {welcome: 'WELCOME', about: 'ABOUT', login: 'LOGIN'}
 
-export function LoginForm( {error = false}:LoginFormProps ) {
-    const [step, setStep] = useState<string>(loginFormSteps.login)
+export function LoginForm( {error = false}: LoginFormProps ) {
+    const [step, setStep] = useState<string>(loginFormSteps.welcome)
 
     function handleChangeStep(step: string) {
         setStep(step)
@@ -27,7 +27,6 @@ export function LoginForm( {error = false}:LoginFormProps ) {
             ) : (
                 <LoginFormLogin error={error} onChangeStep={handleChangeStep} />
             )}
-        
         </>
     )
 }

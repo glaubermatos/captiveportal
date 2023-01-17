@@ -46,12 +46,12 @@ export function LoginFormLogin({ onChangeStep, error }: LoginFormLoginProps) {
         <div className={styles.container}>
             <ButtonBack onChangeStep={onChangeStep} />
 
-            <form method="post" action="$PORTAL_ACTION$">
+            <form method="post" action="https://hotspot.si.ifbaiano.edu.br:8011/index.php?zone=servidores">
                 <ErrorMessage isVisible={error} />
                 <h2>Acessar rede</h2>
 
                 <div className={styles.inputGroup}>
-                    <label htmlFor="user">Usuário</label>
+                    <label htmlFor="user">Usuário <small>(ex.: joao.silva)</small></label>
 
                     <div className={styles.input}>
                         <img src="assets/icon-user.svg" alt="" />
@@ -59,7 +59,7 @@ export function LoginFormLogin({ onChangeStep, error }: LoginFormLoginProps) {
                     </div>
                 </div>
                 <div className={styles.inputGroup}>
-                    <label htmlFor="pass">Senha</label>
+                    <label htmlFor="pass">Senha <small>(a senha padrão não é permitida)</small></label>
                     <div className={styles.input}>
                         <img src="assets/icon-password.svg" alt="" />
                         <input id="pass" name="auth_pass" type={showPassword ? "text" : "password"} required onChange={(e) => setPassword(e.target.value)} />
@@ -76,8 +76,9 @@ export function LoginFormLogin({ onChangeStep, error }: LoginFormLoginProps) {
                     </div>
                 </div>
                 {/* <a className="forgot-password" href="https://portal.ifbaiano.si.intranet/univention/self-service/#passwordreset" target="_blank" rel="noopener noreferrer">Esqueci minha senha</a> */}
-                <input name="redirurl" type="hidden" value="$PORTAL_REDIRURL$" />
-                <input name="zone" type="hidden" value="$PORTAL_ZONE$" />
+                {/* <input name="redirurl" type="hidden" value="$PORTAL_REDIRURL$" /> */}
+                <input name="redirurl" type="hidden" value="http://portal.ifbaiano.si.intranet"></input>
+                {/* <input name="zone" type="hidden" value="$PORTAL_ZONE$" /> */}
                 <input name="accept" type="submit" value="ACESSAR" className="button primary" disabled={!formIsValid()} />
             </form>
         </div>

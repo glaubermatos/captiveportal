@@ -19,10 +19,10 @@ export function LoginFormWelcome({ onChangeStep }: LoginFormWelcomeProps) {
             </div>
 
             <div className={styles.actions}>
-                <a className="button" target="_blank" rel="noopener noreferrer" href="https://portal.ifbaiano.si.intranet/univention/self-service/#page=passwordchange">Cadastrar minha senha pessoal</a>
+                {/* <a className="button" target="_blank" rel="noopener noreferrer" href="https://portal.ifbaiano.si.intranet/univention/self-service/#page=passwordchange">Cadastrar minha senha pessoal</a> */}
                 <div>
-                    <div>Já cadastrei minha senha</div>
-                    <a onClick={() => onChangeStep(loginFormSteps.login)} className="button primary">Entrar</a>
+                    <div>Já cadastrei minha senha pessoal</div>
+                    <a onClick={() => onChangeStep(loginFormSteps.login)} className="button primary">Logar agora</a>
                 </div>
             </div>
         </div>

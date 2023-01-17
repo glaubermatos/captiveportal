@@ -18,7 +18,7 @@ const Home: NextPage = () => {
       </Head>
       
       <section className={styles.imageContainer}>
-          <img src="assets/image-login.svg" alt="image-login" />
+          <img src="assets/image-login.svg" loading="lazy" alt="image-login" />
       </section>
       <section className={styles.content}>
           <div className={styles.container}>
